@@ -1,14 +1,17 @@
 @mixin container {
     @include container-space;
     @include container-center;
+    position: relative;
 }
 
 @mixin container-full {
     @include container-center;
+    position: relative;
 }
 
 @mixin container-left {
     @include container-center;
+    position: relative;
     padding-left: 20px;
 }
 
@@ -20,7 +23,6 @@
 
 @mixin container-space {
     padding: 0 20px;
-    position: relative;
 }
 
 @mixin maxWidth($value) {
