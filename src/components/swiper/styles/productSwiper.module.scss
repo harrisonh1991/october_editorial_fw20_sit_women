@@ -1,13 +1,5 @@
 @import "framework";
 
-.image{
-    display: block;
-}
-
-.photos{
-    padding-top: 71px;
-}
-
 .link{
     color: black;
     text-decoration: none;
@@ -23,19 +15,45 @@
 }
 
 .container{
-    @include container-left;
-    padding-top: 60px;
-    text-align: center;
+    @include container;
+    padding:  20px;
+    margin-top: 40px;
+    max-width: 1170px;
+    text-align: left;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    padding: 0 3px;
+    &__item{
+        flex: 0 0 50%;
+        width: 50%;
+    }
+}
+
+@include media-max($rwd-pc-hd){
+    .flex{
+        &__item{
+            &:not(:nth-of-type(2)){
+                margin-top: 40px;
+            }
+        }
+    }
 }
 
 @include media-min($rwd-pc-hd){
-    .photos{
-        padding-top: 152px;
+    .container{
+        padding-top: 80px;
     }
 
-    .container{
-        padding: 0 20px;
-        padding-top: 100px;
-        text-align: left;
+    .flex{
+        padding: 0 15px;
+        flex-wrap: nowrap;
+        &__item{
+            flex: 0 0 25%;
+            width: 25%;
+        }
     }
 }

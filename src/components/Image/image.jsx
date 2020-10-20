@@ -8,7 +8,7 @@ const Image = props => {
     const { image, hideMobile, hideDesktop } = props,
     offset = 400;
 
-    var classNameDef = [];
+    var classNameDef = [styles.image];
     if(hideMobile)  classNameDef.push(styles.hide_mb);
     if(hideDesktop)  classNameDef.push(styles.hide_pc);
 

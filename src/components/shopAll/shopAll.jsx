@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './styles/shopAll.module.scss';
-import {CtaBitDesktopWLimit} from '../Cta/cta.jsx';
+import {CtaSitDesktopWLimit} from '../Cta/cta.jsx';
 
 export const ShopAll = props => {
 
@@ -8,7 +8,7 @@ export const ShopAll = props => {
 
     return (
         <div className={styles.container}>
-            <CtaBitDesktopWLimit 
+            <CtaSitDesktopWLimit 
                 link={link}
                 content= {content}
             />
