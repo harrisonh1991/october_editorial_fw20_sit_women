@@ -12,23 +12,11 @@ import './App.scss';
 
 const App = () => (
     <article className="App">
-        <ScrollMagicDiv 
-            scrollMagicItems={[{
-                triggerElement: 'sm0',
-                pin: true, 
-                duration: "1000",
-                triggerHook:'onLeave',
-                from:{ rotation: -360, scale: .35, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0'},
-                to: { rotation: 0, scale: 1, y: '0%', top: 0, paddingBottom: '0px', paddingTop:'700px',},
-                children: (
-                    <Hero 
-                        banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543347335168.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031868126773435.jpg'}}/>}
-                        title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
-                        content="2020 年已然过半，在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常，贡献创意，引发思考，设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
-                    />
-                )
-            }]}>
-        </ScrollMagicDiv>
+        <Hero 
+            banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246238549.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189323669754.jpg'}}/>}
+            title={<div>灵感集结<br/>解锁 2020 秋冬潮流趋势</div>}
+            content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。复古、脑洞、理性、文艺，一系列关键词引发幻想，新的惊喜与生活之美等待被发现，快跟上 ITeSHOP 的脚步，做好准备，为你的衣橱提前布局！"
+        />
         <main className="main">
             <ProductShow 
                 title="机能主义大行其道" 

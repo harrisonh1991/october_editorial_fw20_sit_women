@@ -11,17 +11,16 @@
 }
 
 .title{
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
     margin: 0;
     line-height: 1.4;
-    &:not(:first-of-type){
-        margin: 10px;
-    }
+    margin-top: 60px;
 }
 
 .content{
-    font-size: 14px;
-    margin-top: 33px;
+    font-size: 16px;
+    margin-top: 54px;
     line-height: 1.4;
     @include maxWidth(667px);
 }
@@ -33,10 +32,12 @@
     }
 
     .title{
-        font-size: 54px;
+        font-size: 50px;
+        margin-top: 78px;
     }
 
     .content{
+        font-size: 18px;
         margin-top: 60px;
     }
 
