@@ -22,3 +22,17 @@
         display: none;
     }
 }
+
+.hide{
+    @include media-min($rwd-pc-hd){
+        &_pc{
+            display: none !important;
+        }
+    }
+
+    @include media-max($rwd-pc-hd){
+        &_mb{
+            display: none !important;
+        }
+    }
+}

@@ -18,12 +18,12 @@ const App = () => (
                 pin: true, 
                 duration: "1000",
                 triggerHook:'onLeave',
-                from:{ rotation: -360, scale: .35, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0', backgroundColor: 'white'},
+                from:{ rotation: -360, scale: .35, y: '-35%', top: 0, paddingBottom: '0px', paddingTop:'0'},
                 to: { rotation: 0, scale: 1, y: '0%', top: 0, paddingBottom: '0px', paddingTop:'700px',},
                 children: (
                     <Hero 
-                        banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483890313777.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483853918551.jpg'}}/>}
-                        title='123'
+                        banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543347335168.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031868126773435.jpg'}}/>}
+                        title={<div>风格盛宴<br/>直击 <i>2020</i> 秋冬潮流趋势</div>}
                         content="2020 年已然过半，在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。撷取日常，贡献创意，引发思考，设计师们用作品和传统工艺对话，与现代风格交手，兼收并蓄，多面展现时尚的魅力，带领我们共同探寻潮流与生活的更多可能。"
                     />
                 )
@@ -31,23 +31,23 @@ const App = () => (
         </ScrollMagicDiv>
         <main className="main">
             <ProductShow 
-                title="复古格纹大势回潮" 
-                content="纵观几大时装周，格纹元素是本季无法忽视的重头戏。颇具年代感的面料以复古配色致敬传统手工艺，同时采用更为宽大肃穆的廓形模糊性别界限，将乡村感与都市感巧妙结合，既怀旧摩登又时尚新潮。"
+                title="机能主义大行其道" 
+                content="功能元素在本季男装造型中依旧“挑大梁”，各大品牌对于搭配场景与穿着体验投入了更多关注。尺寸各异的多口袋设计方便实用，结合利落剪裁更丰富了整体视觉效果，达到时髦与实用的双赢，呈现多面绅士风格。"
                 scrollMagicItems={[{
                     triggerElement: 'sm1_1',
-                    children:(<Image image={{src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/9/16022347132876974.png'}}/>),
+                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543354896207.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543337675609.jpg'}}/>),
                     from: {rotation:3},
                     to: {rotation:0},
                     duration: '300'
                 },
                 {
                     triggerElement: 'sm1_2',
-                    children:(<Image image={{src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/9/16022347133744245.png'}}/>),
+                    children:(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543343879889.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543335755485.jpg'}}/>),
                     from: {rotation:10},
                     to: {rotation:0},
                     duration: '300'
                 }]}
-                photosTags={['LOLOT', 'PORTS PURE']}
+                photosTags={['STONE ISLAND']}
                 triggerHook="onLeave"
                 products={{
                     shopUrl: "https://cn.iteshop.com/b_it/item/",
@@ -55,237 +55,239 @@ const App = () => (
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'ANXPTAK0338XFPKZ',
-                            name: '格纹阔腿休闲裤',
-                            brand: 'Acne Studios',
+                            sku: 'JUUOC839P61MFSVX',
+                            name: '饰口袋连帽风衣',
+                            brand: 'JUUN.J',
                         },
                         {
-                            sku: 'JNPDSPW2A7WDFNYZ',
-                            name: '褶饰拼接格纹连衣裙',
-                            brand: 'SJYP',
+                            sku: 'JUUJK939PD6MFGYL',
+                            name: '多口袋连帽夹克',
+                            brand: 'JUUN.J',
                         },
                         {
-                            sku: 'ANXKNA60218XFRDZ',
-                            name: '格纹落肩针织衫',
-                            brand: 'Acne Studios',
+                            sku: 'OFWJKPAJK10MCBKX',
+                            name: 'Logo 缝饰配口袋夹克',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'IROOC213MALXFGRZ',
-                            name: '双口袋落肩格纹外套',
-                            brand: 'IRO',
+                            sku: 'OFWSTOG2715NFGRX',
+                            name: '饰口袋 logo 印花衬衫',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         }
                     ]
                 }}
             />
             <ProductShow 
-                title="拼接狂想释放脑洞" 
-                content="拼接作为这一季的关键词，再次带来了不小的惊喜。设计师们将不同材质随心剪裁、自由组合，让高饱和度、高明度的色彩相互碰撞，用新颖的重叠和搭配打破常规，展现了一个又一个有趣的灵魂。"
+                title="跨季开衫魅力持续" 
+                content="持久耐穿的跨季单品越来越受到理性消费者的欢迎，而针织开衫凭借其百搭属性及叠穿魅力，一路从春夏挺进秋冬。传统技艺及简约色系的运用平衡了怀旧感与摩登气质，令整体设计透露着慵懒儒雅的味道。"
                 scrollMagicItems={[{
                     triggerElement: 'sm2_1',
-                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483877091150.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483897397237.jpg'}}/>),
+                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543328404636.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543354319192.jpg'}}/>),
                     from: {rotation:3},
                     to: {rotation:0},
                     duration: 300,
                 },
                 {
                     triggerElement: 'sm2_2',
-                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483856581770.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/160264839006165.jpg'}}/>),
+                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543331884414.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543357636988.jpg'}}/>),
                     from: {rotation:-10},
                     to: {rotation:0},
                     duration: 300,
                 }]}
-                photosTags={['Y\' s']}
+                photosTags={['toga archives', 'Comme des Garçons HOMME PLUS']}
                 products={{
                     shopUrl: "https://cn.iteshop.com/b_it/item/",
                     imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'MHRJK5BL161XFPPH',
-                            name: '拼接设计飞行员夹克',
-                            brand: 'Mihara Yasuhiro',
+                            sku: 'OFWCDSR0816MFBGX',
+                            name: '饰飘带针织开衫',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'JNPJKPW2A7WAFNYZ',
-                            name: '格纹拼接仿两件式西装外套',
-                            brand: 'SJYP',
+                            sku: 'CPXCDAZN058X7GYX',
+                            name: '爱心缝饰开衫',
+                            brand: 'Play Comme des Garçons',
                         },
                         {
-                            sku: 'ENFTP301010XFBLZ',
-                            name: '褶饰叠层拼色上衣',
-                            brand: 'ENFOLD',
+                            sku: 'ANXCD0092KAMEORX',
+                            name: '系扣针织开衫',
+                            brand: 'Acne Studios',
                         },
                         {
-                            sku: 'ENFSK310740XFNYZ',
-                            name: 'ENFOLD',
-                            brand: '叠层拼接半身裙',
+                            sku: 'JLXCD752005MFGYX',
+                            name: '落肩设计针织开衫',
+                            brand: 'JIL SANDER',
                         }
                     ]
                 }}
             />
             <ProductShow 
-                title="维多利亚风格复辟古典" 
-                content="拼接作为这一季的关键词，再次带来了不小的惊喜。设计师们将不同材质随心剪裁、自由组合，让高饱和度、高明度的色彩相互碰撞，用新颖的重叠和搭配打破常规，展现了一个又一个有趣的灵魂。"
+                title="复古格纹大势回潮" 
+                content="纵观几大时装周，格纹元素是本季无法忽视的重头戏。从外套到运动裤，从帽子到衬衣，传统格纹面料以拼接、撞色等现代方式诠释变奏，利落剪裁更着重突出了男士的潇洒干练，演绎复古又新潮的秋冬风尚。"
 
                 scrollMagicItems={[{
                     triggerElement: 'sm3_1',
-                    children:(<Image image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483876985915.jpg'}}/>),
+                    children:(<Image hideMobile={1} image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543340367316.jpg'}}/>),
                     from: {rotation:10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm3_2',
-                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/1602648387980436.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483881579611.jpg'}}/>),
+                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543334481960.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543346842474.jpg'}}/>),
                     from: {rotation:20},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm3_3',
-                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483815051077.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483881587833.jpg'}}/>),
+                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543331156081.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543358006484.jpg'}}/>),
                     from: {rotation:-20},
                     to: {rotation:0},
                     duration: 300
                 }]}
-                photosTags={['Comme des Garçons', 'Simone Rocha', 'GLADYS TAMEZ MILLINERY']}
+                photosTags={['A.P.C']}
                 products={{
                     shopUrl: "https://cn.iteshop.com/b_it/item/",
                     imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'N21DS835593CFWHX',
-                            name: '褶饰叠层连衣裙',
-                            brand: 'N°21',
+                            sku: 'OFWSNAR7712MFRDX',
+                            name: '箭头装饰拼色运动鞋',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'RDVDSA145BSXFPKL',
-                            name: '褶饰薄纱泡泡袖连衣裙',
-                            brand: 'REDValentino',
+                            sku: '0ZXPTM152010ERDX',
+                            name: '老虎边饰休闲裤',
+                            brand: 'A BATHING APE®',
                         },
                         {
-                            sku: 'RDVTPB00UT9XEWHX',
-                            name: '透视效果蕾丝拼接上衣',
-                            brand: 'REDValentino',
+                            sku: 'OFWSWDE2512MFRDX',
+                            name: '斜纹边饰卫衣',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'SMRTETS284BXFWHX',
-                            name: '珠饰蕾丝叠层 T 恤',
-                            brand: 'Simone Rocha',
+                            sku: 'PMACPCR0603MFRDX',
+                            name: 'Logo 刺绣棒球帽',
+                            brand: 'Palm Angels',
                         }
                     ]
                 }}
             />
             <ProductShow 
-                title="质感皮革势不可挡" 
-                content="本季，皮革元素的个性酷感仍在继续，高调登场的皮革感单品为秋冬带来不少惊喜。设计师们通过色彩、肌理、光泽等变化革新这一材质的造型款式，少了奢华亮眼的装饰，皮革本身的质感被更大程度地保留了下来，打造成兼顾实穿性与舒适感的单品，令人难以抗拒。"
+                title="红色派对耀目开启" 
+                content="红色象征着自我、活力与热情，尤其在今年疫情的影响下，急需一抹明媚来照亮生活之美。本季男装设计中红色单品以更挺括的现代感外观和运动风格来呈现，混搭简约中性色一起穿着既可以平衡这份浓烈，又轻松聚焦造型亮点。"
                 
                 scrollMagicItems={[{
                     triggerElement: 'sm4_1',
-                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483812502540.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483883307777.jpg'}}/>),
+                    children:(<Image hideMobile={1} image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543332302262.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543350479570.jpg'}}/>),
                     from: {rotation:10},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm4_2',
-                    children:(<Image image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483846561791.jpg'}}/>),
+                    children:(<Image image={{ src: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543341456173.jpg'}}/>),
                     from: {rotation:-10},
                     to: {rotation:0},
                     duration: 300
                 }]}
-                photosTags={['ZUCCA', 'OFF-WHITE c/o VIRGIL ABLOH']}
+                photosTags={['AMI', 'A.P.C', 'N.HOLLYWOOD']}
                 products={{
                     shopUrl: "https://cn.iteshop.com/b_it/item/",
                     imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'ZVXSKCU1402FFBDX',
-                            name: 'Joslin Cuir 褶皱皮革半身裙',
-                            brand: 'Zadig & Voltaire',
+                            sku: 'PMAPTBB0623MFBLZ',
+                            name: '条纹边饰格纹休闲裤',
+                            brand: 'Palm Angels',
                         },
                         {
-                            sku: 'TIBSPFP4107XFBKX',
-                            name: '车线边饰皮革感短裤',
-                            brand: 'Tibi',
+                            sku: 'OFWJKPB3611MFBKX',
+                            name: '箭头缝饰格纹连帽夹克',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         },
                         {
-                            sku: 'MSGSPB03652AFRDX',
-                            name: '饰口袋皮革感短裤',
-                            brand: 'MSGM',
+                            sku: 'JZXSTB00805MFBLX',
+                            name: '格纹拼接衬衫',
+                            brand: 'JUNYA WATANABE',
                         },
                         {
-                            sku: 'ANXLE1AZ166XDBKX',
-                            name: '皮革机车夹克',
-                            brand: 'Acne Studios',
+                            sku: 'SUSHT332102XERDX',
+                            name: '饰标签格纹渔夫帽',
+                            brand: 'STUSSY',
                         }
                     ]
                 }}
             />
             <ProductShow 
-                title="精准剪裁飒气登场" 
-                content="型格并不局限于特立独行或是鹤立鸡群，有时内敛反而更有力量。于是，严谨利落的精准剪裁在这一季强势回潮，唤起人们对于六七十年代含蓄之美的印象，既深邃沉静又突显轮廓，保持距离的同时悄然展现冷浪漫。"
+                title="多变牛仔重塑风格" 
+                content="牛仔热潮一路从春夏延续到秋冬。除了水洗和褪色风格的单品外，玩味的解构设计势头强劲，原始状态下的简约丹宁也重磅回归，不同手法演绎多变风格，充分展现这一常青元素的独特魅力。
+                10:16
+                "
                 scrollMagicItems={[{
                     triggerElement: 'sm5_1',
-                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483821094942.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483887295464.jpg'}}/>),
+                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543335294199.jpg', mobile:'//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543344447054.jpg'}}/>),
                     from: {rotation: -20},
                     to: {rotation:0},
                     duration: 300
                 },
                 {
                     triggerElement: 'sm5_2',
-                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483829061284.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483892281804.jpg'}}/>),
+                    children:(<Image image={{ desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543328704059.jpg', mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543351224154.jpg'}}/>),
                     from: {rotation: 10},
                     to: {rotation:0},
                     duration: 300
                 }]}
-                photosTags={['Comme des Garçons']}
+                photosTags={['MAISON MARGIELA', 'Comme des Garçons HOMME PLUS', 'MIHARA YASUHIRO']}
                 products={{
                     shopUrl: "https://cn.iteshop.com/b_it/item/",
                     imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: 'OFWJK050011XFBKX',
-                            name: '饰 logo 单粒扣西装外套',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                            sku: 'ANXJKB90452MFBLX',
+                            name: '饰口袋直排扣牛仔夹克',
+                            brand: 'Acne Studios',
                         },
                         {
-                            sku: 'OFWOC222011XFBKX',
+                            sku: '0ZXJKM10004XENYX',
                             name: '挖剪细节直排扣外套',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                            brand: 'A BATHING APE®',
                         },
                         {
-                            sku: 'OFWOC218026XFBGX',
-                            name: '饰口袋直排扣外套',
-                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
+                            sku: 'ZVXJNCA3001HFBLX',
+                            name: 'David 饰标语牛仔裤',
+                            brand: 'Zadig & Voltaire',
                         },
                         {
-                            sku: 'HLXOC04HW40XFBKX',
-                            name: '饰腰带外套',
-                            brand: 'HELMUT LANG',
+                            sku: 'OFWJNSB0514MFBKX',
+                            name: '饰“BELT”印花腰带牛仔裤',
+                            brand: 'OFF-WHITE c/o VIRGIL ABLOH™',
                         }
                     ]
                 }}
             />
             <ShopAll 
                 cta={{
-                    link: "https://cn.iteshop.com/b_it/women/new-arrivals",
+                    link: "https://cn.iteshop.com/b_it/men/new-arrivals",
                     content: '选购全部'
                 }}
             />  
             <RedirectBannerCta media={(
-            <Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483886741974.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/14/16026483834569700.jpg'}}/> 
+            <Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031858095676233.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/15/16027543327949683.jpg'}}/> 
             )} 
             desc={{
                 titles: ['风格盛宴', '直击 2020 秋冬潮流趋势'],
                 content: '探寻潮流与生活的更多可能。'
             }}
             cta={{
-                link: 'https://cn.iteshop.com/b_it/landingPage/october-edirorial-m',
-                content: '探索男士'
+                link: 'https://cn.iteshop.com/b_it/landingPage/october-fw20-w',
+                content: '探索女士'
             }}
             />
         </main>
