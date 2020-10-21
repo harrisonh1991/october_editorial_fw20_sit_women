@@ -14,173 +14,176 @@ const App = () => (
     <article className="App">
         <header>
             <Hero 
-                banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246238549.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189323669754.jpg'}}/>}
+                banner={<Image image={{ mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673760218541.jpg", desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673751749940.jpg'}}/>}
                 title={<div>灵感集结<br/>解锁 2020 秋冬潮流趋势</div>}
                 content="在经历了漫长的沉寂与等待后，潮流灵感在秋冬季节被唤醒。复古、脑洞、理性、文艺，一系列关键词引发幻想，新的惊喜与生活之美等待被发现，快跟上 ITeSHOP 的脚步，做好准备，为你的衣橱提前布局！"
             />
         </header>
         <main className={['"landPg"', styles.container].join(' ')}>
             <ProductShow 
-                banner1={(<Image image={{mobile: "https://itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189324151725.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893229049186.jpg"}}/>)}
-                title="机能主义大行其道" 
-                content="这一季依然能嗅到“机能风”的热潮，功能强大且用途广泛的单品引爆需求。无论是尺寸各异的口袋设计，抑或帅酷不羁的工装服，设计师们在发挥创意的同时，也对搭配场景和穿着体验投入了更多关注，达到时髦与实用的双赢。"
-                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893246282255.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893235724017.jpg"}} />)}
-                products={{
-                    shopUrl: "https://cn.iteshop.com/s_it/item/",
-                    imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
-                    imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
-                    lists: [
-                        {
-                            sku: 'IZXLJR7112F0FKHX',
-                            name: 'ARMY 系列 多口袋连帽夹克',
-                            brand: 'izzue',
-                        },
-                        {
-                            sku: 'AFMSTM00044XFWHX',
-                            name: '饰口袋直排衬衫',
-                            brand: 'AFTERMATHS',
-                        },
-                        {
-                            sku: 'CHXJKI028380FGRD',
-                            name: '多口袋拉链夹克',
-                            brand: 'Carhartt WIP',
-                        },
-                        {
-                            sku: '5CXPTV6702F0FBKX',
-                            name: '饰口袋束脚休闲裤',
-                            brand: 'FIVE CM',
-                        }
-                    ]
-                }}
-            />
-            <ProductShow 
-                banner1={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893241915264.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893230741429.jpg"}}/>)}
-                title="温暖毛绒风潮盛行" 
-                content="复古风的驱使下，怀旧的毛绒及灯芯绒元素得以“重见光明”，拼接、撞色、立体剪裁等手法弱化了材质本身的年代感，着重突出机能性与街头氛围，确保温暖的同时更张扬时髦态度。"
-                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893247062834.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893239527147.jpg"}} />)}
-                products={{
-                    shopUrl: "https://cn.iteshop.com/s_it/item/",
-                    imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
-                    imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
-                    lists: [
-                        {
-                            sku: 'FFXJKM70301XFIVX',
-                            name: '饰口袋绒面夹克',
-                            brand: 'FINGERCROXX',
-                        },
-                        {
-                            sku: 'CHXCPA202039FBWX',
-                            name: 'Logo 刺绣绒面棒球帽',
-                            brand: 'Carhartt WIP',
-                        },
-                        {
-                            sku: 'RRGVCM00117XFBKX',
-                            name: '两面穿饰多口袋马甲',
-                            brand: 'R.R.G.S',
-                        },
-                        {
-                            sku: 'TNTJK0FOW006FMLX',
-                            name: '饰 logo 豹纹绒面夹克',
-                            brand: 'THISISNEVERTHAT',
-                        }
-                    ]
-                }}
-            />
-            <ProductShow 
-                banner1={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893242787000.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893231106615.jpg"}}/>)}
-                title="红色派对耀目开启" 
-                content="红色象征着自我、活力与热情，尤其在今年疫情的影响下，急需一抹明媚来照亮生活之美。运动风格的卫衣、机能感十足的外套、休闲潮范的卫裤等都是热门单品，搭配低调中性色一起穿着就能轻松聚焦造型亮点。"
-                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893249295556.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893239654941.jpg"}} />)}
-                products={{
-                    shopUrl: "https://cn.iteshop.com/s_it/item/",
-                    imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
-                    imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
-                    lists: [
-                        {
-                            sku: 'UGNPTC5021MAFBDX',
-                            name: 'Logo 印花束脚卫裤',
-                            brand: 'UNDER GARDEN',
-                        },
-                        {
-                            sku: 'CUMLJ213T005ERDX',
-                            name: 'Logo 缝饰连帽夹克',
-                            brand: 'CHUMS',
-                        },
-                        {
-                            sku: 'IZXHTH0400F8BRDX',
-                            name: 'NHIZ 系列 标签缝饰套头帽',
-                            brand: 'izzue',
-                        },
-                        {
-                            sku: 'CUMSW257K001ERDX',
-                            name: '图案印花连帽卫衣',
-                            brand: 'CHUMS',
-                        }
-                    ]
-                }}
-            />
-            <ProductShow 
-                banner1={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893243755817.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893231817931.jpg"}}/>)}
+                banner1={(<Image image={{src: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673759855838.jpg"}}/>)}
                 title="复古格纹大势回潮" 
-                content="格纹元素是秋冬季节无法忽视的重头戏，从外套到运动裤，从帽子到衬衣，传统格纹面料以拼接、撞色等现代方式诠释变奏，利落剪裁和廓形设计更渲染了街头感，演绎复古又新潮的型男风尚。"
-                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893249107115.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893229013862.jpg"}} />)}
+                content="格纹是秋冬戒不掉的“瘾”，本季它也依旧是无法忽视的重头戏。颇具年代感的面料或以复古剪裁致敬传统，或以个性配色中和怀旧气息，将乡村感与都市感巧妙结合，既摩登又新潮。"
+                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673760407203.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/1603267375205687.jpg"}} />)}
                 products={{
                     shopUrl: "https://cn.iteshop.com/s_it/item/",
                     imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: '5CXHTC0401F0FNYX',
-                            name: '文字刺绣格纹拼接渔夫帽',
-                            brand: 'FIVE CM',
+                            sku: 'BCXLJ0F1101SFNYZ',
+                            name: '饰链条腰带花呢外套',
+                            brand: 'b+ab',
                         },
                         {
-                            sku: 'MMUSTM80158XFRDX',
-                            name: '照片缝饰格纹衬衫',
-                            brand: 'MUSIUM DIV.',
+                            sku: 'RLHKN03KT008FGRX',
+                            name: '拼色格纹针织衫',
+                            brand: 'ROCKET X LUNCH',
                         },
                         {
-                            sku: 'IZXSTH8132F9DRDX',
-                            name: 'NHIZ 系列 双口袋格纹衬衫',
-                            brand: 'izzue',
+                            sku: 'NORTPN03TP02FNYX',
+                            name: '饰拉链格纹上衣',
+                            brand: 'NOIR',
                         },
                         {
-                            sku: '5CXLJR7127F0FBLX',
-                            name: '饰口袋格纹拼接夹克',
-                            brand: 'FIVE CM',
+                            sku: 'LPFDSKO860BEFBGX',
+                            name: '饰口袋格纹针织连衣裙',
+                            brand: 'LOS ANGELES PROJECT',
                         }
                     ]
                 }}
             />
             <ProductShow 
-                banner1={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893243928928.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893232596545.jpg"}}/>)}
-                title="多变牛仔重塑风格" 
-                content="牛仔热潮一路从春夏延续到秋冬。除了水洗和褪色风格的单品外，玩味的解构设计势头强劲，原始状态下的简约丹宁也重磅回归，不同手法演绎多变风格，充分展现这一常青元素的独特魅力。"
-                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/1603189324045428.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893229795532.jpg"}} />)}
+                banner1={(<Image image={{src: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673762086801.jpg"}}/>)}
+                title="拼接狂想释放脑洞" 
+                content="拼接作为这一季的关键词，再次带来了不小的惊喜。设计师们将不同材质随心剪裁、自由组合，让高饱和度、高明度的色彩相互碰撞，用新颖的重叠和搭配打破常规，展现了一个又一个有趣的灵魂。"
+                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673762581900.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673754379403.jpg"}} />)}
+                banner2Index={2}
                 products={{
                     shopUrl: "https://cn.iteshop.com/s_it/item/",
                     imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
                     imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
                     lists: [
                         {
-                            sku: '5CXLJJ7500F0FBLX',
-                            name: '饰口袋牛仔夹克',
-                            brand: 'FIVE CM',
+                            sku: 'OPNJK0JK1307FKHX',
+                            name: '饰口袋拼接西装外套',
+                            brand: 'OPEN PLAN',
                         },
                         {
-                            sku: '5CXJNJ6508F0FBLX',
-                            name: '磨损细节牛仔裤',
-                            brand: 'FIVE CM',
+                            sku: 'MURSK4080070FBWX',
+                            name: '不对称褶裥拼接半身裙',
+                            brand: 'MURUA',
                         },
                         {
-                            sku: 'UGNLJC7213MAFBLD',
-                            name: 'Logo 刺绣饰口袋牛仔夹克',
-                            brand: 'UNDER GARDEN',
+                            sku: 'CABSK1127F0MFBLX',
+                            name: '格纹拼接不对称半身裙',
+                            brand: 'CCAABB',
                         },
                         {
-                            sku: 'UGNJNC6071MAEBLL',
-                            name: '口袋缝饰牛仔长裤',
-                            brand: 'UNDER GARDEN',
+                            sku: 'GLAJK0320052FBLX',
+                            name: '多缝饰拼接设计夹克',
+                            brand: 'GLAD NEWS',
+                        }
+                    ]
+                }}
+            />
+            <ProductShow 
+                banner1={(<Image image={{src: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/1603267376342688.jpg"}}/>)}
+                title="维多利亚风格复辟古典" 
+                content="2020 年秋冬季大举复古旗帜，荷叶边、褶饰、蕾丝、羊腿袖等维多利亚时期的元素重返视野，续写潮流。在保留传统审美的基础上，服饰设计以更为轻便现代的方式呈现，融入利落剪裁和率性酷感，满足着装需求之余也流露女性反叛意识。"
+                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/160326737630511.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/1603267375573813.jpg"}} />)}
+                banner2Index={2}
+                products={{
+                    shopUrl: "https://cn.iteshop.com/s_it/item/",
+                    imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
+                    imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
+                    lists: [
+                        {
+                            sku: 'AMOTP03TS002FIVX',
+                            name: '饰荷叶边镂空上衣',
+                            brand: 'AMONG',
+                        },
+                        {
+                            sku: 'SSJDSDR1259BFBLX',
+                            name: '饰荷叶边格纹连衣裙',
+                            brand: 'Sister Jane',
+                        },
+                        {
+                            sku: 'LPFTPWB861LBFBGX',
+                            name: '荷叶边饰双排扣上衣',
+                            brand: 'LOS ANGELES PROJECT',
+                        },
+                        {
+                            sku: 'GSPTPTOG236YFYEX',
+                            name: '泡泡袖褶饰上衣',
+                            brand: 'GHOSPELL',
+                        }
+                    ]
+                }}
+            />
+            <ProductShow 
+                banner1={(<Image image={{src: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673755803783.jpg"}}/>)}
+                title="学院风尚悄然兴起" 
+                content="以菱格纹为代表的系列单品，宣告学院风的跨时空回归，也再次强调了复古在这个秋冬的灵感觉醒。海洋气息浓郁的针织背心，蓝白为主调的色彩搭配，温文尔雅的条纹设计等，无一不表达着对上世纪八十年代的怀念与致敬。"
+                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673755985692.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673747997580.jpg"}} />)}
+                products={{
+                    shopUrl: "https://cn.iteshop.com/s_it/item/",
+                    imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
+                    imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
+                    lists: [
+                        {
+                            sku: 'B1XKNL4595XFFNYL',
+                            name: '拼色边饰针织背心',
+                            brand: ':CHOCOOLATE',
+                        },
+                        {
+                            sku: 'AMOSK03SK003FGYX',
+                            name: '饰马衔扣格纹半身裙',
+                            brand: 'AMONG',
+                        },
+                        {
+                            sku: 'RLHCD03KT026FBGD',
+                            name: '菱格嵌花针织开衫',
+                            brand: 'ROCKET X LUNCH',
+                        },
+                        {
+                            sku: 'RLHKN03KT003FGRX',
+                            name: '菱格嵌花针织衫',
+                            brand: 'ROCKET X LUNCH',
+                        }
+                    ]
+                }}
+            />
+            <ProductShow 
+                banner1={(<Image image={{src: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673757566600.jpg"}}/>)}
+                title="利落风衣重磅来袭" 
+                content="自带气场的风衣诞生于 20 世纪初，任凭时代的车轮滚滚向前，它的魅力也依然不减。这一季，时尚上演着轮回，风衣再度翻红，既有大方的传统造型，也不乏个性的现代设计，剪裁利落且线条顺畅，一切皆为气质服务。"
+                banner2={(<Image image={{mobile: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673758119594.jpg", desktop: "//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673749408287.jpg"}} />)}
+                banner2Index={2}
+                products={{
+                    shopUrl: "https://cn.iteshop.com/s_it/item/",
+                    imageUrl: 'https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/' ,
+                    imageUrl_end: "-pdp-1.jpg?x-oss-process=image/resize,w_460,h_574,limit_0,m_pad" ,
+                    lists: [
+                        {
+                            sku: 'MURJK0000101EKHX',
+                            name: '格纹褶裥拼接风衣',
+                            brand: 'MURUA',
+                        },
+                        {
+                            sku: 'LPFJKLEWC261EBGX',
+                            name: '饰系带连帽风衣',
+                            brand: 'LOS ANGELES PROJECT',
+                        },
+                        {
+                            sku: 'LPFLJLEWC268EGYX',
+                            name: '饰腰带短款风衣',
+                            brand: 'LOS ANGELES PROJECT',
+                        },
+                        {
+                            sku: 'MURLJ0100003EKHX',
+                            name: '配腰带短款风衣',
+                            brand: 'MURUA',
                         }
                     ]
                 }}
@@ -188,17 +191,17 @@ const App = () => (
             
             <ShopAll 
                 cta={{
-                    link: "https://cn.iteshop.com/s_it/men/new-arrivals",
+                    link: "https://cn.iteshop.com/s_it/OCT-EDITORIAL-SIT-F",
                     content: '选购全部'
                 }}
             />  
         </main>
         <footer className={['"landPg"', styles.container].join(' ')}>
             <RedirectBannerCta 
-                media={(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032647826866763.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/20/16031893235059409.jpg'}}/> )} 
+                media={(<Image image={{mobile: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/16032673758369714.jpg', desktop: '//itmall-resources.oss-cn-hangzhou.aliyuncs.com/4/2020/10/21/1603267375094389.jpg'}}/> )} 
                 cta={{
-                    link: 'https://cn.iteshop.com/s_it/landingPage/october-fw20-w',
-                    content: '探索女装潮流趋势'
+                    link: 'https://cn.iteshop.com/s_it/landingPage/october-fw20-m',
+                    content: '探索男装潮流趋势'
                 }}
                 />
         </footer>
